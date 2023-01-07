@@ -1,6 +1,7 @@
 # Tailwind Dark Mode using semantic colors
 
-Demo of implementing dark mode using Tailwind CSS.
+Demo of implementing dark mode using Tailwind CSS. This version uses semantic
+color tokens, e.g. `bg-default` instead of `bg-white` and `dark:bg-neutral-900`.
 
 ![Screenshot](assets/screenshot-light-mode.png)
 
