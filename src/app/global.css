@@ -17,6 +17,33 @@
     color: theme(colors.white);
   }
 
+  .bg-brand {
+    background-color: theme(colors.primary.800);
+  }
+  .dark .bg-brand {
+    background-color: theme(colors.primary.600);
+  }
+
+  .bg-brand-hover {
+    background-color: theme(colors.primary.700);
+  }
+
+  .text-onbrand {
+    color: theme(colors.white);
+  }
+
+  .bg-brand-secondary {
+    background-color: theme(colors.primary.100);
+  }
+
+  .bg-brand-secondary-hover {
+    background-color: theme(colors.primary.200);
+  }
+
+  .text-onbrand-secondary {
+    color: theme(colors.primary.700);
+  }
+
   .bg-default-hover {
     background-color: theme(colors.neutral.900 / 5%);
   }
