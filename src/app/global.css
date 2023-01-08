@@ -17,6 +17,13 @@
     color: theme(colors.white);
   }
 
+  .stroke-default {
+    stroke: theme(colors.neutral.900);
+  }
+  .dark .stroke-default {
+    stroke: theme(colors.white);
+  }
+
   .bg-brand {
     background-color: theme(colors.primary.800);
   }
@@ -32,6 +39,10 @@
     color: theme(colors.white);
   }
 
+  .ring-brand {
+    --tw-ring-color: theme(colors.primary.500);
+  }
+
   .bg-brand-secondary {
     background-color: theme(colors.primary.100);
   }
@@ -42,6 +53,10 @@
 
   .text-onbrand-secondary {
     color: theme(colors.primary.700);
+  }
+
+  .ring-brand-secondary {
+    --tw-ring-color: theme(colors.primary.500);
   }
 
   .bg-default-hover {
