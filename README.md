@@ -3,6 +3,10 @@
 Demo of implementing dark mode using Tailwind CSS. This version uses semantic
 color tokens instead of the `dark` variant provided by tailwind.
 
+![Screenshot](assets/screenshot-light-mode.png)
+
+![Screenshot](assets/screenshot-dark-mode.png)
+
 ### Context
 
 This approach was outlined by the Figma team in their Config 2022 presentation
@@ -108,10 +112,6 @@ Then I define these CSS variables in `global.css`, once for each theme:
 
 Now switching between the two themes is just a matter of switching the theme
 class on the `<html>` element. This is done in the `ModeToggle` component.
-
-![Screenshot](assets/screenshot-light-mode.png)
-
-![Screenshot](assets/screenshot-dark-mode.png)
 
 ## Development Build
 
