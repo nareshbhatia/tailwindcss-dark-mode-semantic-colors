@@ -1,5 +1,8 @@
 'use client';
 
+const THEME_LIGHT = 'theme-light';
+const THEME_DARK = 'theme-dark';
+
 function SunIcon(props: any) {
   return (
     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
@@ -30,7 +33,16 @@ export function ModeToggle() {
 
   function toggleMode() {
     disableTransitionsTemporarily();
-    document.documentElement.classList.toggle('dark');
+
+    // toggle theme on <html> element
+    const classes = document.documentElement.className.split(' ');
+    if (classes.includes(THEME_LIGHT)) {
+      document.documentElement.classList.remove(THEME_LIGHT);
+      document.documentElement.classList.add(THEME_DARK);
+    } else {
+      document.documentElement.classList.remove(THEME_DARK);
+      document.documentElement.classList.add(THEME_LIGHT);
+    }
   }
 
   return (
