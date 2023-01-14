@@ -62,12 +62,14 @@
     --color-bg-secondary: rgba(var(--color-primary-100));
     --color-bg-secondary-hover: rgba(var(--color-primary-200));
 
-    --color-ring-brand: rgba(var(--color-primary-500));
-    --color-ring-secondary: rgba(var(--color-primary-500));
+    --color-border-default: rgba(var(--color-neutral-300));
+    --color-border-focus: rgba(var(--color-primary-500));
 
     --color-stroke-default: rgba(var(--color-neutral-900));
+    --color-stroke-brand: rgba(var(--color-primary-800));
 
     --color-text-default: rgba(var(--color-black));
+    --color-text-brand: rgba(var(--color-primary-800));
     --color-text-onbrand: rgba(var(--color-white));
     --color-text-onsecondary: rgba(var(--color-primary-700));
   }
@@ -80,13 +82,24 @@
     --color-bg-secondary: rgba(var(--color-primary-100));
     --color-bg-secondary-hover: rgba(var(--color-primary-200));
 
-    --color-ring-brand: rgba(var(--color-primary-500));
-    --color-ring-secondary: rgba(var(--color-primary-500));
+    --color-border-default: rgba(var(--color-neutral-300));
+    --color-border-focus: rgba(var(--color-primary-400));
 
     --color-stroke-default: rgba(var(--color-white));
+    --color-stroke-brand: rgba(var(--color-primary-500));
 
     --color-text-default: rgba(var(--color-white));
+    --color-text-brand: rgba(var(--color-primary-500));
     --color-text-onbrand: rgba(var(--color-white));
     --color-text-onsecondary: rgba(var(--color-primary-700));
+  }
+}
+
+@layer utilities {
+  .ring-default {
+    --tw-ring-color: rgba(var(--color-primary-500));
+  }
+  .dark .ring-default {
+    --tw-ring-color: rgba(var(--color-primary-400));
   }
 }
